@@ -77,7 +77,7 @@ const InputFild = ({ handleChange, handleSubmit }) => {
         />
       </label>
       <label htmlFor="dyear">
-        Submit Day of Year:{" "}
+        Submit Year:{" "}
         <input
           required
           id="dyear"
