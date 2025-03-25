@@ -1,0 +1,117 @@
+/* General Form Styling */
+.coverForm {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Labels */
+.coverForm label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs & Select Dropdown */
+.coverForm input[type="text"],
+.coverForm select,
+.coverForm textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+.coverForm input[type="text"]:focus,
+.coverForm select:focus,
+.coverForm textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+/* Select Styling */
+.coverForm select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Textarea Styling */
+.coverForm textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.coverForm input[type="submit"] {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.coverForm input[type="submit"]:hover {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  transform: scale(1.05);
+}
+
+/* Form Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Hover Bounce */
+.coverForm input[type="submit"]:hover {
+  animation: bounce 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.coverPageDownloadBtn {
+  padding: 10px 20px;
+  background-color: greenyellow;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.coverPageDownloadBtn:hover {
+  background-color: #e6f6ea;
+}
