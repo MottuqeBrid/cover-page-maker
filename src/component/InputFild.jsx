@@ -57,7 +57,7 @@ const InputFild = ({ handleChange, handleSubmit }) => {
       </label>
 
       <label htmlFor="day">
-        Submit Day:{" "}
+        Submission Day:{" "}
         <input
           id="day"
           placeholder="Enter Your Submit Day"
@@ -67,7 +67,7 @@ const InputFild = ({ handleChange, handleSubmit }) => {
         />
       </label>
       <label htmlFor="month">
-        Submit Month:
+        Submission Month:
         <input
           id="month"
           placeholder="Type month sort name"
@@ -77,7 +77,7 @@ const InputFild = ({ handleChange, handleSubmit }) => {
         />
       </label>
       <label htmlFor="dyear">
-        Submit Year:{" "}
+        Submission Year:
         <input
           required
           id="dyear"
