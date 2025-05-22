@@ -37,7 +37,7 @@ const CoverPageDownload = ({ data }) => {
       const imgWidth = 210;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight, "", "FAST");
-      pdf.save("assignment-cover.pdf");
+      pdf.save(`${id}-${assignmentTitle}.pdf`);
       cover.current.style.display = "none";
     });
   };
@@ -93,8 +93,7 @@ const CoverPageDownload = ({ data }) => {
                   NAME: {name.toUpperCase()} <br />
                   ID: {id} <br />
                   YEAR: {year[0]}
-                  <sup>{year[1] + year[2]}</sup>, TERM:{" "}
-                  {term[0]}
+                  <sup>{year[1] + year[2]}</sup>, TERM: {term[0]}
                   <sup>{term[1] + term[2]}</sup>
                   <br />
                   Khulna University, Khulna
